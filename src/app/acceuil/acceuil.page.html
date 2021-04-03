@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Home page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="bg-img">
+    <ion-menu-toggle auto-hide="false" *ngFor="let page of menuPages; let i = index">
+      <ion-item routerDirection="root" [routerLink]="[page.url]" lines="none" detail="false" routerLinkActive="selected">
+        <ion-label> {{ page.title }} </ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+
+    <p id="date"> {{ update | async | date: 'short' | uppercase}} </p>
+    
+  </div>
+  
+</ion-content>
+

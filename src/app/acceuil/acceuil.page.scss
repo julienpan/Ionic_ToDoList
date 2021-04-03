@@ -1,0 +1,17 @@
+.bg-img {
+    padding: 1px;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#date {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    
+}
