@@ -1,8 +1,8 @@
 .bg-img {
-    padding: 1px;
+    padding: 10px;
     height: 100%;
     width: 100%;
-    background-image: url(../../assets/bg.jpeg);
+    background-image: url(../../assets/tour.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -15,3 +15,8 @@
     font-size: large;
     
 }
+
+ion-item {
+    --ion-background-color: linear-gradient(#C04848, #480048);
+}
+

@@ -23,18 +23,18 @@
 </ion-content> -->
 
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      ToDo App
+      Listing des tâches
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <div padding>
+<ion-content>
+  <div>
     <ion-list>
-      <ion-item *ngFor="let todo of taskList; let i = index">
-        {{todo}}
+      <ion-item *ngFor="let t of taskList; let i = index">
+        {{t}}
         <div class="item-note" slot="end">
           <ion-button color="danger" clear (click)="deleteTask(i)">
             <ion-icon name="trash"></ion-icon>
@@ -43,8 +43,8 @@
       </ion-item>
     </ion-list>
 
-    <ion-button (click)="getTask()">Afficher les tâches</ion-button>
-    <ion-button (click)="retour()">Retour</ion-button>
+    <ion-button fill="outline" (click)="getTask()">Afficher les tâches</ion-button>
+    <ion-button fill="outline" (click)="retour()">Retour</ion-button>
     <ion-button (click)="onLogOut()">Deconnexion</ion-button>
 
   </div>
