@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Création des tâches</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-item>
+        <ion-input [(ngModel)]="myTask" placeholder="Entrez une tâche à ajouter"></ion-input>
+        <ion-button color="dark" fill="outline" (click)="addTask()" slot="end">
+          <ion-icon slot="icon-only" name="add"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-item>
+  </ion-card>
+  <ion-button color="dark" fill="outline" (click)="checkListing()">Listing</ion-button>
+  <ion-button color="dark" fill="outline"(click)="onLogOut()">Deconnexion</ion-button>
+</ion-content>

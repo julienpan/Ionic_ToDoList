@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Listing des tâches
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-list>
+      <ion-item *ngFor="let t of taskList; let i = index">
+        {{t}}
+        <div class="item-note" slot="end">
+          <ion-button color="danger" clear (click)="deleteTask(i)">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-item>
+    </ion-list>
+
+    <ion-button color="dark" fill="outline" (click)="getTask()">Afficher les tâches</ion-button>
+    <ion-button color="dark" fill="outline" (click)="onLogOut()">Deconnexion</ion-button>
+    <ion-button color="dark" fill="clear" (click)="retour()">Retour</ion-button>
+
+  </div>
+</ion-content>
