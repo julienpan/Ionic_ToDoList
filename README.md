@@ -1,4 +1,4 @@
 # Ionic_ToDoList
 
 Version 1 : master  
-Version 2 : second
+Version 2 : second (avec side menu)
